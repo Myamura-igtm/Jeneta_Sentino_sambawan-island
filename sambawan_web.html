@@ -22,6 +22,61 @@
       margin: 0 auto;
       padding: 60px 20px;
     }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      background: #00AEEF;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .navbar .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar .logo:hover {
+      color: #FFD369;
+    }
+    .navbar .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    .navbar .nav-link {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .navbar .nav-link:hover {
+      background: #FFD369;
+      color: #003049;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
     header {
       text-align: center;
       margin-bottom: 60px;
@@ -123,14 +178,12 @@
       font-size: 16px;
       margin-top: 80px;
     }
-    /* Section Divider (waves) */
     .wave-divider {
       width: 100%;
       height: 80px;
       background: url('https://www.svgrepo.com/show/365018/wave-top.svg') no-repeat bottom center;
       background-size: cover;
     }
-    /* Animations */
     [data-animate] {
       opacity: 0;
       transform: translateY(30px);
@@ -140,48 +193,21 @@
       opacity: 1;
       transform: translateY(0);
     }
-    /* Button Positioning */
-    .sambawan-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #003049;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    .sambawan-button:hover {
-      background-color: #00AEEF;
-      box-shadow: 0 8px 15px rgba(0, 162, 239, 0.3);
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 40px;
-      }
-      section h2 {
-        font-size: 30px;
-      }
-      .highlight, .quote {
-        font-size: 20px;
-      }
-      .cta-button {
-        font-size: 16px;
-      }
-      .sambawan-button {
-        font-size: 16px;
-        padding: 10px 15px;
-      }
-    }
   </style>
 </head>
+
 <body>
 
-<a href="sambawan_web.html" class="sambawan-button">Sambawan</a>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <a href="index.html" class="logo">Sambawan Island</a>
+  <div class="nav-links">
+    <a href="beach.html" class="nav-link">Beach</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="boatride.html" class="nav-link">Boat Ride</a>
+    <a href="traveltips.html" class="nav-link">Travel Tips</a>
+  </div>
+</nav>
 
 <div class="container">
 
@@ -197,7 +223,7 @@
     White sands. Crystal-clear waters. Sunset views like no other.
   </div>
 
-  <section data-animate>
+  <section id="beach" data-animate>
     <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB8JgZ1SAs4bEm-c6iXCD0FgIYF-vzNVIvDCA2kDmKTODXXQPu3L0ly09l4kjUF8oT2zDyfSWxIgmM9wemPYVhU9SnTnD6iiTTkGo7_z33SNNO8yS1i2PBy_S2VqmLTVnqiolg-2=s1360-w1360-h1020-rw" alt="Sambawan Beach">
     <h2>Rates and Fees</h2>
     <ul>
@@ -212,7 +238,7 @@
 
   <div class="wave-divider"></div>
 
-  <section data-animate>
+  <section id="cottages" data-animate>
     <img src="https://tourism.biliranisland.com/wp-content/uploads/2015/08/Sambawan-Cottage-2-Rates.jpg" alt="Sambawan Cottages">
     <h2>Activities</h2>
     <ul>
@@ -225,7 +251,7 @@
 
   <div class="wave-divider"></div>
 
-  <section data-animate>
+  <section id="boatride" data-animate>
     <img src="https://i0.wp.com/theoutcastjourney.com/wp-content/uploads/2017/12/PB260405.jpg?resize=1024%2C768" alt="Boat Ride">
     <h2>How to Get There</h2>
     <ul>
@@ -237,7 +263,7 @@
 
   <div class="wave-divider"></div>
 
-  <section id="plan" data-animate>
+  <section id="traveltips" data-animate>
     <img src="https://tourism.biliranisland.com/wp-content/uploads/2016/11/Sambawan-Island-11.jpg" alt="Travel Tips">
     <h2>Travel Tips</h2>
     <ul>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boat Ride - Sambawan Beach</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    /* Navigation Bar */
+    .navbar {
+      background-color: #006f8e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-link {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Content Area */
+    .container {
+      padding: 20px;
+    }
+
+    #boatride {
+      text-align: center;
+    }
+
+    #boatride img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-height: 500px;
+    }
+
+    #boatride h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      margin: 20px 0;
+      color: #006f8e;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      margin: 0;
+    }
+
+    ul li {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #006f8e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .nav-link {
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #boatride h2 {
+        font-size: 24px;
+      }
+
+      ul li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <a href="index.html" class="logo">Sambawan</a>
+  <div class="nav-links">
+    <a href="sambawan_web.html" class="nav-link">Home</a>
+    <a href="beach.html" class="nav-link">Beach</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <a href="boatride.html" class="nav-link">Boat Ride</a>
+    <a href="traveltips.html" class="nav-link">Travel Tips</a>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <section id="boatride">
+    <img src="https://i0.wp.com/theoutcastjourney.com/wp-content/uploads/2017/12/PB260405.jpg?resize=1024%2C768" alt="Boat Ride">
+    <h2>How to Get There</h2>
+    <ul>
+      <li><strong>From Tacloban City:</strong> Van or bus to Naval, Biliran (2–3 hours).</li>
+      <li><strong>From Naval:</strong> Boat to Maripipi Island (1.5 hours).</li>
+      <li><strong>From Maripipi:</strong> Small pump boat to Sambawan Island (15–20 minutes).</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
