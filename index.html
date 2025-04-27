@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sambawan Island</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: #003049;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 20px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #FFD369;
+      color: #003049;
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 211, 105, 0.5);
+    }
+    .cta-button:hover {
+      background-color: #FF6B6B;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5);
+      transform: translateY(-3px);
+    }
+    .highlight {
+      background: #00AEEF;
+      color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 70px;
+      font-size: 24px;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 80px;
+      position: relative;
+    }
+    section img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+    section img:hover {
+      transform: scale(1.03);
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 40px;
+      color: #00AEEF;
+      margin-bottom: 25px;
+      font-weight: 700;
+      text-align: center;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section ul li {
+      font-size: 20px;
+      margin-bottom: 12px;
+      line-height: 1.7;
+      text-align: center;
+    }
+    .quote {
+      background: #003049;
+      color: #fff;
+      font-style: italic;
+      font-size: 26px;
+      padding: 40px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 60px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #00AEEF;
+      color: #fff;
+      font-size: 16px;
+      margin-top: 80px;
+    }
+    /* Section Divider (waves) */
+    .wave-divider {
+      width: 100%;
+      height: 80px;
+      background: url('https://www.svgrepo.com/show/365018/wave-top.svg') no-repeat bottom center;
+      background-size: cover;
+    }
+    /* Animations */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    [data-animate].active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 40px;
+      }
+      section h2 {
+        font-size: 30px;
+      }
+      .highlight, .quote {
+        font-size: 20px;
+      }
+      .cta-button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Welcome to Sambawan Island</h1>
+    <p>
+      "Sambawan Island is one of the hidden gems of the Philippines, offering stunning white sand beaches and crystal-clear waters in a peaceful, untouched paradise."
+    </p>
+    <a href="#plan" class="cta-button">Plan Your Visit</a>
+  </header>
+
+  <div class="highlight" data-animate>
+    White sands. Crystal-clear waters. Sunset views like no other.
+  </div>
+
+  <section data-animate>
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB8JgZ1SAs4bEm-c6iXCD0FgIYF-vzNVIvDCA2kDmKTODXXQPu3L0ly09l4kjUF8oT2zDyfSWxIgmM9wemPYVhU9SnTnD6iiTTkGo7_z33SNNO8yS1i2PBy_S2VqmLTVnqiolg-2=s1360-w1360-h1020-rw" alt="Sambawan Beach">
+    <h2>Rates and Fees</h2>
+    <ul>
+      <li>Entrance Fee – ₱120</li>
+      <li>Environmental Fee – ₱20</li>
+      <li>Beach Hut (8 pax) – ₱500/day</li>
+      <li>Lodging Cottage 1 (12–15 pax) – ₱2,500/day</li>
+      <li>Lodging Cottage 2 (2–6 pax) – ₱1,500/day</li>
+      <li>Tent Pitching – ₱100/day (small tent)</li>
+    </ul>
+  </section>
+
+  <div class="wave-divider"></div>
+
+  <section data-animate>
+    <img src="https://tourism.biliranisland.com/wp-content/uploads/2015/08/Sambawan-Cottage-2-Rates.jpg" alt="Sambawan Cottages">
+    <h2>Activities</h2>
+    <ul>
+      <li>Snorkeling & Scuba Diving</li>
+      <li>Island Hopping</li>
+      <li>Camping & Overnight Stays</li>
+      <li>Trekking Adventures</li>
+    </ul>
+  </section>
+
+  <div class="wave-divider"></div>
+
+  <section data-animate>
+    <img src="https://i0.wp.com/theoutcastjourney.com/wp-content/uploads/2017/12/PB260405.jpg?resize=1024%2C768" alt="Boat Ride">
+    <h2>How to Get There</h2>
+    <ul>
+      <li>From Tacloban City: Van or bus to Naval, Biliran (2–3 hours).</li>
+      <li>From Naval: Boat to Maripipi Island (1.5 hours).</li>
+      <li>From Maripipi: Small pump boat to Sambawan Island (15–20 minutes).</li>
+    </ul>
+  </section>
+
+  <div class="wave-divider"></div>
+
+  <section id="plan" data-animate>
+    <img src="https://tourism.biliranisland.com/wp-content/uploads/2016/11/Sambawan-Island-11.jpg" alt="Travel Tips">
+    <h2>Travel Tips</h2>
+    <ul>
+      <li>Bring enough cash — limited ATMs available.</li>
+      <li>Pack eco-friendly essentials like reef-safe sunscreen and reusable water bottles.</li>
+      <li>Check the weather forecast for the best experience.</li>
+    </ul>
+  </section>
+
+  <div class="quote" data-animate>
+    "Escape to Sambawan — where the sea kisses the sky and time stands still."
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Sambawan Island | All Rights Reserved
+</footer>
+
+<script>
+  const animatedElements = document.querySelectorAll('[data-animate]');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+  animatedElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
